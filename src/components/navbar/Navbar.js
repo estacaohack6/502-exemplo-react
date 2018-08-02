@@ -7,7 +7,7 @@ class Navbar extends Component {
     return (
         <nav>
            {
-             this.props.links.map((texto, posicao) => <a key={posicao} href="">{texto}</a>)
+             this.props.links.map((objeto, posicao) => <a key={posicao} href={objeto.endereco}>{objeto.texto}</a>)
            }
         </nav>
     )
