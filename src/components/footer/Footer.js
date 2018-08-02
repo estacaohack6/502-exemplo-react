@@ -14,7 +14,7 @@ class Footer extends Component {
         return (
             <footer>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quibusdam deserunt assumenda accusamus quas natus, maxime, non similique perspiciatis corporis commodi repudiandae quasi aliquid dolore explicabo iste modi doloremque quisquam.</p>
-                <Navbar />
+                <Navbar links={['Parceiros', 'Sobre o projeto','Mapa do site']} />
                 <div className="container">
                     <button onClick={this.clicar}>Entre em Contato!</button>
                     <div className="social">

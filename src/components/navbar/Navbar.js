@@ -3,12 +3,12 @@ import './Navbar.css';
 
 class Navbar extends Component {
   render() {
+    console.log(this.props.links);
     return (
         <nav>
-            <a href="">Home</a>
-            <a href="">Sobre nós</a>
-            <a href="">Quem somos</a>
-            <a href="">Contato conosco</a>
+           {
+             this.props.links.map((texto, posicao) => <a key={posicao} href="">{texto}</a>)
+           }
         </nav>
     )
   }
